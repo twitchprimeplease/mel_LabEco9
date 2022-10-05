@@ -22,7 +22,7 @@ void loop() {
 
   if (digitalRead(button) == HIGH && doSomething == false) {
 
-    Serial.print(doSomething);
+    Serial.print('A');
     Serial.print(' ');
     Serial.print(percentX);
     Serial.print(' ');
@@ -39,7 +39,7 @@ void loop() {
 
 
   if (percentX != prevPercentX || percentY != prevPercentY) {
-    Serial.print(doSomething);
+    Serial.print('0');
     Serial.print(' ');
     Serial.print(percentX);
     Serial.print(' ');
